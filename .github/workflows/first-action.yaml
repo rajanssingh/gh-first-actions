@@ -9,4 +9,7 @@ jobs:
       - name: Print Greeting
         run: echo "Hello from first job!"
       - name: Print Goodbye
-        run: echo "Bye from first job!"
+        # run multi-line shell commands using | symbol
+        run: |
+            echo "Bye from first job!"
+            echo "This completes first-job successfully."
